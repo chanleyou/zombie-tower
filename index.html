@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/zombie.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story|Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Zombie Tower</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col" id="header"><h1>Zombie Tower</h1></div>
+      </div>
+      <div class="row">
+        <div class="col" id="game-board"></div>
+      </div>
+      <div class="row">
+        <div class="col" id="instructions"><p>Use <strong>WSAD</strong> to control your character. Reach the <span class="green">exit</span> to the next floor while avoiding <span class="zombie">zombies</span>, <span class="red">red</span> tiles and <span class="yellow">yellow</span> tiles.</p>
+        <p> - Med packs recover your HP by 15.<br> - Press <strong>R</strong> when you have bombs ( ! ) to remove all zombies.</p></div>
+      </div>
+      <div class="row" id="stats-display">
+        <div class="col" id="hp-col">HP: <span id="life-display"></span></div>
+        <div class="col" id="bombs-col"><span id="bombs-display"></span></div>
+        <div class="col" id="floor-col">Floor: <span id="floor-display"></span></div>
+      </div>
+      <div class ="row">
+        <div class="col" id="again-col">
+          <button class="game-button" id="play-again">Play again?</button>
+          <button class="game-button" id="start-button">Start</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
